@@ -25,6 +25,7 @@ data class Uvod(
 @Serializable
 data class Pitanje(
     val tezina: String,
+    val slika: String? = null,
     val tekst: String,
     val odgovori: List<String>,
     val tocan_odgovor: Int
