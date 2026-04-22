@@ -30,6 +30,8 @@
         { "tezina": "Lako", "slika": "", "tekst": "Funkcija zadana kao $f(x) = (x-1)(x-2)$ ima nultočke:", "odgovori": ["-1 i -2", "1 i 2", "0 i 1", "0 i -2"], "tocan_odgovor": 1 },
         { "tezina": "Lako", "slika": "", "tekst": "Ako je tjeme na y-osi, tada je koeficijent b jednak:", "odgovori": ["1", "-1", "c", "0"], "tocan_odgovor": 3 },
         { "tezina": "Lako", "slika": "", "tekst": "Graf funkcije $f(x) = (x-3)^2$ pomaknut je u odnosu na $x^2$:", "odgovori": ["3 gore", "3 dolje", "3 lijevo", "3 desno"], "tocan_odgovor": 3 },
+        { "tezina": "Lako", "slika": "funkcija_grafa", "tekst": "Kako glasi funkcija prikazanog grafa?", "odgovori": ["$f(x) = 3x^2 + 1$", "$f(x) = x^2 + 1$", "$f(x) = x^2 + 2$", "$f(x) = -x^2 + 1$"], "tocan_odgovor": 1 },
+        { "tezina": "Lako", "slika": "funkcija_grafa2", "tekst": "Kojoj funkciji pripada prikazani graf?", "odgovori": ["$f(x) = x^2 + 3$", "$f(x) = -x^2 + 3x - 3$", "$f(x) = -x^2 + 3x + 3$", "$f(x) = -x^2 + 3$"], "tocan_odgovor": 3 },
         { "tezina": "Srednje", "slika": "", "tekst": "Koordinate tjemena parabole $f(x) = x^2 - 4x + 4$ su:", "odgovori": ["(2,0)", "(-2,0)", "(0,4)", "(4,0)"], "tocan_odgovor": 0 },
         { "tezina": "Srednje", "slika": "", "tekst": "Koji je pravac os simetrije funkcije $f(x) = -x^2 + 6x$?", "odgovori": ["x=-3", "x=3", "y=3", "x=6"], "tocan_odgovor": 1 },
         { "tezina": "Srednje", "slika": "", "tekst": "Funkcija $f(x) = x^2 - 2x + c$ dodiruje x-os. Koliki je c?", "odgovori": ["0", "1", "-1", "2"], "tocan_odgovor": 1 },
@@ -40,6 +42,7 @@
         { "tezina": "Srednje", "slika": "", "tekst": "Funkcija prolazi točkama (0,3) i (1,0). Ako je a=1, funkcija je:", "odgovori": ["$x^2-4x+3$", "$x^2+4x+3$", "$x^2-3x+4$", "$x^2+3x+4$"], "tocan_odgovor": 0 },
         { "tezina": "Srednje", "slika": "", "tekst": "Ako funkcija ima nultočke 2 i -2, a tjeme joj je (0, 4), njezin graf je zadan s:", "odgovori": ["$y=x^2-4$", "$y=-x^2+4$", "$y=2x^2-4$", "$y=-2x^2+4$"], "tocan_odgovor": 1 },
         { "tezina": "Srednje", "slika": "", "tekst": "Kolika je najmanja vrijednost funkcije $f(x) = x^2 + 4x + 5$?", "odgovori": ["1", "5", "0", "-1"], "tocan_odgovor": 0 },
+        { "tezina": "Srednje", "slika": "vodeci_koef", "tekst": "Koliko iznosi vodeći koeficijent funkcije prikazanog grafa?", "odgovori": ["-1", "-3", "$-\\frac{1}{3}$", "$\\frac{1}{3}$"], "tocan_odgovor": 2 },
         { "tezina": "Teško", "slika": "", "tekst": "Za koje m pravac $y = 2x + m$ dodiruje parabolu $y = x^2$?", "odgovori": ["m=1", "m=-1", "m=0", "m=2"], "tocan_odgovor": 1 },
         { "tezina": "Teško", "slika": "", "tekst": "Neka su $x_1$ i $x_2$ nultočke funkcije $f(x)=x^2-5x+6$. Koliko iznosi $x_1^2 + x_2^2$?", "odgovori": ["25", "13", "12", "36"], "tocan_odgovor": 1 },
         { "tezina": "Teško", "slika": "", "tekst": "Parabola zadana s $f(x) = ax^2 + bx + c$ ima tjeme u T(2, -1) i prolazi kroz (0, 3). Koeficijent a iznosi:", "odgovori": ["1", "-1", "2", "-2"], "tocan_odgovor": 0 },
@@ -126,6 +129,8 @@
         { "tezina": "Lako", "slika": "", "tekst": "Dio kruga omeđen s dva polumjera i kružnim lukom je:", "odgovori": ["Kružni odsječak", "Kružni isječak", "Kružni vijenac", "Polukrug"], "tocan_odgovor": 1 },
         { "tezina": "Lako", "slika": "", "tekst": "Dio kruga omeđen tetivom i kružnim lukom je:", "odgovori": ["Kružni odsječak", "Kružni isječak", "Kružni vijenac", "Polukrug"], "tocan_odgovor": 0 },
         { "tezina": "Lako", "slika": "", "tekst": "Površina dijela ravnine između dvije koncentrične kružnice je:", "odgovori": ["Kružni odsječak", "Isječak", "Kružni vijenac", "Valjak"], "tocan_odgovor": 2 },
+        { "tezina": "Lako", "slika": "kut_alpha", "tekst": "Koliko iznosi prikazani kut $\\alpha$?", "odgovori": ["$\\alpha$ = 70°", "$\\alpha$ = 90°", "$\\alpha$ = 300°", "$\\alpha$ = 75°"], "tocan_odgovor": 3 },
+        { "tezina": "Lako", "slika": "kut_alpha2", "tekst": "Koliko iznosi prikazani kut $\\alpha$?", "odgovori": ["$\\alpha$ = 170°", "$\\alpha$ = 140°", "$\\alpha$ = 70°", "$\\alpha$ = 110°"], "tocan_odgovor": 2 },
         { "tezina": "Srednje", "slika": "", "tekst": "Ako je središnji kut $80^\\circ$, pripadni obodni kut iznosi:", "odgovori": ["$160^\\circ$", "$40^\\circ$", "$80^\\circ$", "$20^\\circ$"], "tocan_odgovor": 1 },
         { "tezina": "Srednje", "slika": "", "tekst": "Opseg kruga je $10\\pi$. Površina mu je:", "odgovori": ["$100\\pi$", "$20\\pi$", "$25\\pi$", "$50\\pi$"], "tocan_odgovor": 2 },
         { "tezina": "Srednje", "slika": "", "tekst": "Površina kruga je $64\\pi$. Promjer tog kruga je:", "odgovori": ["8", "16", "32", "4"], "tocan_odgovor": 1 },
@@ -140,7 +145,8 @@
         { "tezina": "Teško", "slika": "", "tekst": "Tangencijalni četverokut sa stranicama a, b, c, d redom zadovoljava:", "odgovori": ["a+b = c+d", "a+c = b+d", "a*c = b*d", "a+d = b+c"], "tocan_odgovor": 1 },
         { "tezina": "Teško", "slika": "", "tekst": "U pravokutnom trokutu s katetama 6 i 8, polumjer upisane kružnice iznosi:", "odgovori": ["2", "3", "4", "5"], "tocan_odgovor": 0 },
         { "tezina": "Teško", "slika": "", "tekst": "Krug je upisan u jednakostranični trokut stranice $a=6$. Polumjer kruga je:", "odgovori": ["$\\sqrt{3}$", "$2\\sqrt{3}$", "$3\\sqrt{3}$", "$6\\sqrt{3}$"], "tocan_odgovor": 0 },
-        { "tezina": "Teško", "slika": "", "tekst": "Razlika središnjeg i obodnog kuta nad istim kružnim lukom iznosi $60^\\circ$. Koliki je obodni kut?", "odgovori": ["$30^\\circ$", "$60^\\circ$", "$90^\\circ$", "$120^\\circ$"], "tocan_odgovor": 1 }
+        { "tezina": "Teško", "slika": "", "tekst": "Razlika središnjeg i obodnog kuta nad istim kružnim lukom iznosi $60^\\circ$. Koliki je obodni kut?", "odgovori": ["$30^\\circ$", "$60^\\circ$", "$90^\\circ$", "$120^\\circ$"], "tocan_odgovor": 1 },
+        { "tezina": "Teško", "slika": "krug_xy", "tekst": "U prikazanom krugu, koliko iznose x i y?", "odgovori": ["x = 128°, y = 132°", "x = 46°, y = 154°", "x = 128°, y = 13°", "x = 12°, y = 132°"], "tocan_odgovor": 0 }
       ]
     },
     {
@@ -174,7 +180,8 @@
         { "tezina": "Lako", "slika": "", "tekst": "U pravokutnom trokutu katete su a i b. Formula za P je:", "odgovori": ["$a*b$", "$a*b/2$", "$a*b*c$", "$(a+b)/2$"], "tocan_odgovor": 1 },
         { "tezina": "Lako", "slika": "", "tekst": "Koji poučak bi koristio ako su zadane 3 stranice, a traži se kut?", "odgovori": ["Pitagorin", "Sinusov", "Kosinusov", "Talesov"], "tocan_odgovor": 2 },
         { "tezina": "Lako", "slika": "", "tekst": "Kut čiji je kosinus jednak 0 je:", "odgovori": ["$0^\\circ$", "$45^\\circ$", "$60^\\circ$", "$90^\\circ$"], "tocan_odgovor": 3 },
-        { "tezina": "Srednje", "slika": "", "tekst": "Ako je $\\sin\\alpha = 0.6$, koliko je $\\cos\\alpha$ za šiljasti kut?", "odgovori": ["0.4", "0.64", "0.8", "1.0"], "tocan_odgovor": 2 },
+        { "tezina": "Lako", "slika": "kosinusov_poucak", "tekst": "Koliko, prema kosinusovu poučku, iznosi preostala stranica?", "odgovori": ["$\\sqrt{39}$", "$\\sqrt{109}$", "39", "109"], "tocan_odgovor": 0 },
+        { "tezina": "Lako", "slika": "trapez", "tekst": "Ukoliko je prikazani trapez pravilan, kolika je duljina njegovih kraka?", "odgovori": ["10", "25", "8", "13"], "tocan_odgovor": 0 },        { "tezina": "Srednje", "slika": "", "tekst": "Ako je $\\sin\\alpha = 0.6$, koliko je $\\cos\\alpha$ za šiljasti kut?", "odgovori": ["0.4", "0.64", "0.8", "1.0"], "tocan_odgovor": 2 },
         { "tezina": "Srednje", "slika": "", "tekst": "Površina trokuta s $a=5, b=8$ i kutom $\\gamma=30^\\circ$ je:", "odgovori": ["20", "10", "$10\\sqrt{3}$", "$20\\sqrt{3}$"], "tocan_odgovor": 1 },
         { "tezina": "Srednje", "slika": "", "tekst": "U trokutu, stranica a=10, nasuprotni $\\alpha=45^\\circ$. Polumjer opisane kružnice R je:", "odgovori": ["$5\\sqrt{2}$", "$10\\sqrt{2}$", "$10$", "$5$"], "tocan_odgovor": 0 },
         { "tezina": "Srednje", "slika": "", "tekst": "Izračunaj stranicu c ako je $a=3, b=5, \\gamma=60^\\circ$:", "odgovori": ["$\\sqrt{19}$", "$\\sqrt{34}$", "$7$", "$\\sqrt{15}$"], "tocan_odgovor": 0 },

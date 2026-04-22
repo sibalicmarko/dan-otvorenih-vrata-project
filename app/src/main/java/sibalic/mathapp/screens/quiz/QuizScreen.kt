@@ -8,7 +8,9 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -21,9 +23,11 @@ import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.Button
@@ -42,6 +46,9 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -55,6 +62,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.DialogProperties
 import sibalic.mathapp.components.MathText
 import sibalic.mathapp.ui.theme.AppBackground
 import sibalic.mathapp.ui.theme.MathNeutral
@@ -72,6 +80,7 @@ fun QuizScreen(
 ) {
     val currentQuestion = viewModel.questions.getOrNull(viewModel.currentIndex)
     val totalQuestions = viewModel.questions.size
+    var expandedImageResId by remember { mutableStateOf<Int?>(null) }
 
     val progressTarget = if (totalQuestions > 0) {
         (viewModel.currentIndex + 1).toFloat() / totalQuestions.toFloat()
@@ -166,13 +175,20 @@ fun QuizScreen(
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(padding)
+                    .verticalScroll(rememberScrollState())
                     .padding(horizontal = 20.dp)
             ) {
                 Spacer(modifier = Modifier.height(24.dp))
 
                 DifficultyTag(tezina = currentQuestion.tezina)
 
-                Spacer(modifier = Modifier.height(12.dp))
+                MathText(
+                    text = "**${currentQuestion.tekst}**",
+                    textSizeSp = 19f,
+                    textColor = MathNeutral
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
 
                 if (currentQuestion.slika != null) {
                     val context = LocalContext.current
@@ -186,22 +202,17 @@ fun QuizScreen(
                     if (imageResId != 0) {
                         Image(
                             painter = painterResource(id = imageResId),
-                            contentDescription = "Image description",
+                            contentDescription = "Slika uz pitanje",
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .heightIn(max = 200.dp)
-                                .clip(RoundedCornerShape(12.dp)),
+                                .clip(RoundedCornerShape(12.dp))
+                                .clickable { expandedImageResId = imageResId },
                             contentScale = ContentScale.Fit
                         )
                         Spacer(modifier = Modifier.height(16.dp))
                     }
                 }
-
-                MathText(
-                    text = "**${currentQuestion.tekst}**",
-                    textSizeSp = 19f,
-                    textColor = MathNeutral
-                )
 
                 Spacer(modifier = Modifier.height(32.dp))
 
@@ -219,6 +230,35 @@ fun QuizScreen(
                         )
                     }
                 }
+            }
+        }
+    }
+
+    expandedImageResId?.let { resId ->
+        androidx.compose.ui.window.Dialog(
+            onDismissRequest = { expandedImageResId = null },
+            properties = DialogProperties(usePlatformDefaultWidth = false)
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(Color.Black.copy(alpha = 0.85f))
+                    .clickable(
+                        interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() },
+                        indication = null,
+                        onClick = { expandedImageResId = null }
+                    )
+                    .padding(16.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = resId),
+                    contentDescription = "Uvećana slika",
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .clip(RoundedCornerShape(8.dp)),
+                    contentScale = ContentScale.Fit
+                )
             }
         }
     }
@@ -257,6 +297,7 @@ fun AnswerOption(
     Surface(
         modifier = Modifier
             .fillMaxWidth()
+            .clip(RoundedCornerShape(16.dp))
             .selectable(
                 selected = isSelected,
                 onClick = onSelect,
