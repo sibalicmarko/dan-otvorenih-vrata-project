@@ -40,6 +40,7 @@ fun HomeScreen(
     onTopicClick: (String) -> Unit
 ) {
     val topics = listOf(
+        TopicItem("OSNOVE MATEMATIKE", "Osnove matematike", R.drawable.basics, MathBasics),
         TopicItem("KVADRATNA FUNKCIJA", "Kvadratna funkcija i nejednadžbe", R.drawable.quadrate, MathPrimary),
         TopicItem("KVADRATNA JEDNADŽBA", "Kvadratna jednadžba", R.drawable.algebra, MathSecondary),
         TopicItem("KRUG I KRUŽNICA", "Krug i kružnica", R.drawable.radius, MathTertiary),

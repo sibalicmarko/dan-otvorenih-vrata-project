@@ -22,9 +22,9 @@ class QuizViewModel (
     }
 
     private fun loadSpecificQuiz() {
-        val easy = repository.getRandomQuestions(topicName, "Lako", 5)
+        val easy = repository.getRandomQuestions(topicName, "Lako", 4)
         val medium = repository.getRandomQuestions(topicName, "Srednje", 4)
-        val hard = repository.getRandomQuestions(topicName, "Teško", 1)
+        val hard = repository.getRandomQuestions(topicName, "Teško", 2)
 
         questions = (easy + medium + hard).shuffled()
     }

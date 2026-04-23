@@ -2,6 +2,7 @@ package sibalic.mathapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+val MathBasics = Color(0xFFFFB300)
 val MathPrimary = Color(0xFF58CC02)
 val MathSecondary = Color(0xFF1CB0F6)
 val MathTertiary = Color(0xFFFF9600)

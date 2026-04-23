@@ -1,6 +1,36 @@
 {
   "kategorije": [
     {
+      "naziv": "Osnove matematike",
+      "uvod": {
+        "tekst": "Ovaj modul obuhvaća temeljne matematičke operacije i koncepte koji čine bazu za cjelokupno srednjoškolsko obrazovanje.\nPrisjetit ćemo se osnova algebre, rada s potencijama i korijenima, Pitagorinog poučka te rješavanja osnovnih sustava jednadžbi.",
+        "formule": [
+          "Pitagorin poučak: $c^2 = a^2 + b^2$",
+          "Pravila za potencije: $a^m \\cdot a^n = a^{m+n}$, $(a^m)^n = a^{m \\cdot n}$",
+          "Kvadrat binoma i razlika kvadrata: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$, $a^2 - b^2 = (a - b)(a + b)$"
+        ],
+        "tips": [
+          "Kod izlučivanja zajedničkog faktora ili množenja zagrada, uvijek možeš napamet pomnožiti rješenje unazad da vidiš dobivaš li početni izraz.",
+          "Sustavi jednadžbi se često najbrže rješavaju metodom suprotnih koeficijenata. Traži 'pluseve i minuse' uz istu nepoznanicu.",
+          "Pazi na minuse kod kvadriranja i korjenovanja!",
+          "Zapamti da je kvadrat negativnog broja uvijek pozitivan.",
+          "Iracionalne brojeve (poput $\\sqrt{2}$) ostavljamo u obliku korijena."
+        ]
+      },
+      "pitanja": [
+        { "tezina": "Lako", "slika": "", "tekst": "Izluči zajednički faktor u izrazu $6x + 9y$.", "odgovori": ["$3(2x + 3y)$", "$6(x + 9y)$", "$3(3x + 2y)$", "$2(3x + 4y)$"], "tocan_odgovor": 0 },
+        { "tezina": "Lako", "slika": "", "tekst": "Koji je od navedenih brojeva iracionalan?", "odgovori": ["0.5", "$\\sqrt{16}$", "$\\sqrt{2}$", "$\\frac{2}{3}$"], "tocan_odgovor": 2 },
+        { "tezina": "Lako", "slika": "", "tekst": "Zapiši umnožak u obliku potencije: $5 \\cdot 5 \\cdot 5 \\cdot 5$.", "odgovori": ["$4^5$", "20", "$5^4$", "25"], "tocan_odgovor": 2 },
+        { "tezina": "Lako", "slika": "", "tekst": "Pojednostavni izraz: $(a^3)^4$.", "odgovori": ["$a^7$", "$a^{12}$", "$a^1$", "$a^{34}$"], "tocan_odgovor": 1 },
+        { "tezina": "Srednje", "slika": "", "tekst": "Izračunaj duljinu hipotenuze $c$ pravokutnog trokuta ako su katete $a = 6 \\text{ cm}$ i $b = 8 \\text{ cm}$.", "odgovori": ["14 cm", "10 cm", "100 cm", "2 cm"], "tocan_odgovor": 1 },
+        { "tezina": "Srednje", "slika": "", "tekst": "Pomnoži binome: $(x + 2)(x - 3)$.", "odgovori": ["$x^2 - 6$", "$x^2 + x - 6$", "$x^2 - x - 6$", "$x^2 - 5x + 6$"], "tocan_odgovor": 2 },
+        { "tezina": "Srednje", "slika": "", "tekst": "Riješi sustav jednadžbi metodom suprotnih koeficijenata: $x + y = 10$, $x - y = 2$.", "odgovori": ["(6, 4)", "(4, 6)", "(5, 5)", "(8, 6)"], "tocan_odgovor": 0 },
+        { "tezina": "Srednje", "slika": "", "tekst": "Djelomično korjenuj izraz $\\sqrt{50}$.", "odgovori": ["$2\\sqrt{5}$", "$5\\sqrt{2}$", "$10\\sqrt{5}$", "$25\\sqrt{2}$"], "tocan_odgovor": 1 },
+        { "tezina": "Teško", "slika": "", "tekst": "Riješi linearnu jednadžbu s razlomcima: $\\frac{x - 1}{2} - \\frac{x + 1}{3} = 1$.", "odgovori": ["$x = 11$", "$x = 7$", "$x = 6$", "$x = 5$"], "tocan_odgovor": 0 },
+        { "tezina": "Teško", "slika": "", "tekst": "Riješi kvadratnu jednadžbu: $2x^2 = 32$.", "odgovori": ["$x = 16$", "$x = 4 \\text{ ili } x = -4$", "$x = 8$", "$x = 4$"], "tocan_odgovor": 1 }
+      ]
+    },
+    {
       "naziv": "Kvadratna funkcija i nejednadžbe",
       "uvod": {
         "tekst": "Kvadratna funkcija je funkcija oblika $f(x) = ax^2 + bx + c$, gdje je $a \\neq 0$. Kvadratne nejednadžbe uključuju znakove nejednakosti ($>, <, \\ge, \\le$) i rješavaju se pronalaženjem nultočaka te analizom položaja parabole u odnosu na x-os.",
